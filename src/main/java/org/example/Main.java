@@ -4,11 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
-import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -59,6 +57,7 @@ public class Main {
         NASAAnswer answer = mapper.readValue(response.getEntity().getContent(), NASAAnswer.class); // указали откуда берем данные и в какой тип преобразовываем
 
         // 12 Хтим вывести ссылку на экран
+        // Тест гит
 
         System.out.println(answer.url);
 
@@ -68,4 +67,6 @@ public class Main {
 
 
     }
+
+
 }

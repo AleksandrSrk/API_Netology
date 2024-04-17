@@ -26,4 +26,6 @@ public class NASAAnswer {
         this.title = title;
         this.url = url;
     }
+
+
 }
