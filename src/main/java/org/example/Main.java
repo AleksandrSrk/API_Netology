@@ -66,11 +66,12 @@ public class Main {
 
 //19 !!! Продолжение. Решаем проблему названия файла. Разбиваем ссылку в массив чере сплит
         String[] urlSeparated = answer.url.split("/");
-        String fileName = urlSeparated[urlSeparated.length-1];
+        String fileName = "C:/Users/User-PRG/IdeaProjects/Nasa/DownloadImages/" + urlSeparated[urlSeparated.length-1]; // Добавляем путь к папке куда сохранять будем.
+        // Проверить как на другом компе будет работать. Создастся новая папка???
 
 
 
-        // 13 Хотим скачать картинку по ссылке. Снова создаем запрос на скачивание
+        // 13 Хотим скачать картинку по ссылке. Снова создаем запрос на скачивание""
 
         HttpGet httpGetImage = new HttpGet(answer.url);
 
