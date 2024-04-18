@@ -71,6 +71,7 @@ public class Main {
 
 
 
+
         // 13 Хотим скачать картинку по ссылке. Снова создаем запрос на скачивание""
 
         HttpGet httpGetImage = new HttpGet(answer.url);
