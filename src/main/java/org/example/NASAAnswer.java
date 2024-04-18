@@ -3,6 +3,7 @@ package org.example;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class NASAAnswer {
+    String copyright;
     String date;
     String explanation;
     String hdurl;
@@ -17,6 +18,7 @@ public class NASAAnswer {
                       @JsonProperty("media_type") String media_type,
                       @JsonProperty("service_version") String service_version,
                       @JsonProperty("title") String title,
+                      @JsonProperty("copyright") String copyright,
                       @JsonProperty("url") String url) {
         this.date = date;
         this.explanation = explanation;
@@ -24,6 +26,7 @@ public class NASAAnswer {
         this.media_type = media_type;
         this.service_version = service_version;
         this.title = title;
+        this.copyright = copyright;
         this.url = url;
     }
 
