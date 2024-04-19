@@ -8,14 +8,18 @@ import org.apache.hc.client5.http.impl.classic.HttpClients;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         // 1. создали переменную куда сохранили ссылку
 
-        String url = "https://api.nasa.gov/planetary/apod?" +
+/*        String url = "https://api.nasa.gov/planetary/apod?" +
                 "api_key=UdsL1z6MImFCl9m6MOgJ2WMRUQpl1syJanR7azjR" +
-                "&date=2022-04-11"; // меняем тут ссылку под наш апикей
+                "&date=2020-04-11"; // меняем тут ссылку под наш апикей
+*/
+
+        String url = GenerateDay();
 
         // 2. Создаем объект, который будет посылать запросы. Это HTTP клиент
 
@@ -66,10 +70,8 @@ public class Main {
 
 //19 !!! Продолжение. Решаем проблему названия файла. Разбиваем ссылку в массив чере сплит
         String[] urlSeparated = answer.url.split("/");
-        String fileName = "C:/Users/User-PRG/IdeaProjects/Nasa/DownloadImages/" + urlSeparated[urlSeparated.length-1]; // Добавляем путь к папке куда сохранять будем.
+        String fileName = "D://GoogleDisk//РАБОЧЕЕ//IT//Stepik_12_2023_AndroidStart//API_Netology//DownloadImages/" + urlSeparated[urlSeparated.length - 1]; // Добавляем путь к папке куда сохранять будем.
         // Проверить как на другом компе будет работать. Создастся новая папка???
-
-
 
 
         // 13 Хотим скачать картинку по ссылке. Снова создаем запрос на скачивание""
@@ -99,13 +101,22 @@ public class Main {
         // Выше создадим массив, разобьем входящий УРЛ на части и возьем последнюю часть
 
 
-
-
-
-
-
-
     }
 
+    public static String GenerateDay() {
+        String url1 = "https://api.nasa.gov/planetary/apod?api_key=UdsL1z6MImFCl9m6MOgJ2WMRUQpl1syJanR7azjR";
+        String year = "&date=2020-";
+        String line = "-";
+        Random random = new Random();
+
+        int rand = random.nextInt(1, 12);
+
+        String month = Integer.toString(rand);
+        String day = Integer.toString(rand);
+
+        String res = url1 + year + month + line + day;
+
+        return res;
+    }
 
 }
