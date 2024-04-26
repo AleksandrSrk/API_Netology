@@ -14,12 +14,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
         // 1. создали переменную куда сохранили ссылку
 
-/*        String url = "https://api.nasa.gov/planetary/apod?" +
+        String url = "https://api.nasa.gov/planetary/apod?" +
                 "api_key=UdsL1z6MImFCl9m6MOgJ2WMRUQpl1syJanR7azjR" +
                 "&date=2020-04-11"; // меняем тут ссылку под наш апикей
-*/
 
-        String url = GenerateDay();
+        // String url = GenerateDay(); - принимает случайную дату из метода ниже, пока закомментил это
 
         // 2. Создаем объект, который будет посылать запросы. Это HTTP клиент
 
@@ -63,7 +62,7 @@ public class Main {
 // и возникнет ошибка.
         NASAAnswer answer = mapper.readValue(response.getEntity().getContent(), NASAAnswer.class); // указали откуда берем данные и в какой тип преобразовываем
 
-        // 12 Хтим вывести ссылку на экран
+        // 12 Хотим вывести ссылку на экран
         // Тест гит
 
         System.out.println(answer.url); // выводится ссылка на картинку https://apod.nasa.gov/apod/image/2404/NGC1232_Eye_of_God_Galaxy_fullsize_2024-03-28_1024.jpg
@@ -77,6 +76,7 @@ public class Main {
         // 13 Хотим скачать картинку по ссылке. Снова создаем запрос на скачивание""
 
         HttpGet httpGetImage = new HttpGet(answer.url);
+
 
         // 14 Посылаем запрос
 
@@ -103,6 +103,8 @@ public class Main {
 
     }
 
+    /* Метод создания рандомного числа для запроса у наса
+
     public static String GenerateDay() {
         String url1 = "https://api.nasa.gov/planetary/apod?api_key=UdsL1z6MImFCl9m6MOgJ2WMRUQpl1syJanR7azjR";
         String year = "&date=2020-";
@@ -118,5 +120,8 @@ public class Main {
 
         return res;
     }
+
+     */
+
 
 }

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97953cb7-6336-4e00-8c07-4114a52bc1e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DownloadImages/BetelgeuseImagined_EsoCalcada_960.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DownloadImages/CarinaPerspective_Fairbairn_960.jpg" afterDir="false" />
+    <list default="true" id="97953cb7-6336-4e00-8c07-4114a52bc1e4" name="Changes" comment="MakeRandomData">
       <change afterPath="$PROJECT_DIR$/DownloadImages/Pleiades_Fraile_960.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DownloadImages/VenusM45-2020Apr02-105x.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2024_12_13__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_04_2024_12_13__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DownloadImages/TimelapseVenusPleiadesFinazzi800.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DownloadImages/IssSunspot_Letian_1080.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,9 +92,20 @@
       <option name="presentableId" value="Default" />
       <updated>1713283099999</updated>
     </task>
+    <task id="LOCAL-00001" summary="MakeRandomData">
+      <option name="closed" value="true" />
+      <created>1713533473274</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713533473274</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="MakeRandomData" />
+    <option name="LAST_COMMIT_MESSAGE" value="MakeRandomData" />
   </component>
 </project>
